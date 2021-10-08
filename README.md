@@ -13,8 +13,8 @@
   * [901. Online Stock Span](https://github.com/yanheng888/leetcode/tree/main/stack/901.%20Online%20Stock%20Span)
   * [907. Sum of Subarray Minimums](https://github.com/yanheng888/leetcode/tree/main/stack/907.%20Sum%20of%20Subarray%20Minimums)
   * [1673. Find the Most Competitive Subsequence](https://github.com/yanheng888/leetcode/tree/main/Stack/1673.%20Find%20the%20Most%20Competitive%20Subsequence)
-  * [496. Next Greater Element I](https://github.com/yanheng888/leetcode/tree/main/Stack/496.%20Next%20Greater%20Element%20I)
+  * [496. Next Greater Element I](https://github.com/yanheng888/leetcode/tree/main/stack/496.%20Next%20Greater%20Element%20I)
   * [503. Next Greater Element II](https://github.com/yanheng888/leetcode/tree/main/stack/503.%20Next%20Greater%20Element%20II)
-  * [85. Maximal-Rectangle](https://github.com/yanheng888/leetcode/tree/main/Stack/85.%20Maximal-Rectangle)
+  * [85. Maximal-Rectangle](https://github.com/yanheng888/leetcode/tree/main/stack/85.%20Maximal-Rectangle)
 
 
