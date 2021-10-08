@@ -16,6 +16,5 @@
   * [496. Next Greater Element I](https://github.com/yanheng888/leetcode/tree/main/Stack/496.%20Next%20Greater%20Element%20I)
   * [503. Next Greater Element II](https://github.com/yanheng888/leetcode/tree/main/stack/503.%20Next%20Greater%20Element%20II)
   * [85. Maximal-Rectangle](https://github.com/yanheng888/leetcode/tree/main/Stack/85.%20Maximal-Rectangle)
-  * 
 
 
