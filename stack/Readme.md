@@ -51,8 +51,8 @@ for(int i = 0; i < n; i++){
 
 Stack:parse expression 问题通常和字符串处理，括号有关，最首要的问题是确认何时出栈，何时入栈。通常来说，"("时入栈，“）”时出栈。入栈时，直接入栈。出栈时则需要做更多的处理，如获取字符串的数字，获取特定的字段等。常用的方法有 Character.isDigit(),Character.isLowerCase,Integer.parseInt(),String.substring(),String.valueOf()
 
-**获取字符串数字，特定字段：**
-
+*   获取字符串数字，特定字段：
+```
 for(int i = 0; i < s.length(); i++){
     char ch = s.charAt(i);
     if(ch == '+' || ch == '-'){
@@ -65,3 +65,4 @@ for(int i = 0; i < s.length(); i++){
         stack.add(number);
         i = j - 1;
 }//leetcode 227
+```
