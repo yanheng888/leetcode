@@ -15,11 +15,16 @@ class Solution {
         for (int i = 0; i < n; i++) {
             Arrays.fill(dp[i], true);
         }
-        for (int i = n-1; i >= 0; --i) {
-            for (int j = i+1; j < n; j++) {
+        for (int i = 0; i < n-1; i++) {
+            dp[i][i+1] = (s.charAt(i) == s.charAt(i+1));
+        }
+        for (int len = 3; len <= n; len++) {
+            for (int i = 0; i+len-1 < n; i++) {
+                int j = i+len-1;
                 dp[i][j] = (s.charAt(i) == s.charAt(j)) && dp[i+1][j-1];
             }
         }
+
         LinkedList<String> temp = new LinkedList<>();
         dfs(0,temp);
         return res;
