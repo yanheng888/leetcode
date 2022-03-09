@@ -1,8 +1,10 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Random;
 
 class Solution {
     int K;
+    Random random = new Random();
     public int findKthLargest(int[] nums, int k) {
         int n = nums.length;
         this.K = n-k+1;
@@ -28,11 +30,16 @@ class Solution {
         return i;
     }
 
+    private int randomPartition(int[] nums,int left, int right){
+        int rand = random.nextInt(right-left+1)+left;
+        swapp(nums,rand,right);
+        return partition(nums, left, right);
+    }
     private void quickSort(int[] nums, int left, int right) {
         if(left > right){
             return;
         }
-        int pivot = partition(nums, left, right);
+        int pivot = randomPartition(nums, left, right);
         if(pivot+1 < K){
             quickSort(nums,pivot+1,right);
         }else if(pivot+1 == K){
