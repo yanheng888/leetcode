@@ -12,3 +12,9 @@ if(j >= x){
     dp[i][j] += dp[i-1][j-x];
 }
 ```
+
+还需要注意的是 dp[i][j]表示，前i个数sum = j 的个数，所以第一层循环需要从1到n, x= nums[i-1]
+```
+for (int i = 1; i <= n; i++) {
+    int x = nums[i-1];
+```
