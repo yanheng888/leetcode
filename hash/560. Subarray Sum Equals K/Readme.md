@@ -1,4 +1,8 @@
 
+Solution: 前缀和+哈希
+
+Solution2: 前缀和+枚举
+
 和 two sum相似，利用前缀和数组和hashmap求出答案
 
 注意
