@@ -8,8 +8,8 @@ class Solution {
         }
         int cnt = 0;
         for(int[] pair: prerequisites){
-            map.get(pair[0]).add(pair[1]);
-            inDegree[pair[1]]++;
+            map.get(pair[1]).add(pair[0]);
+            inDegree[pair[0]]++;
         }
         for(int i=0;i<inDegree.length;i++){
             if(inDegree[i] == 0){
