@@ -1,17 +1,32 @@
 
 ```
-while (low < high){ //if low == high, loop will continue forever
+l=-1,r=N
+while (l+1 != r){ 
     int mid = low+(high-low)/2;
-    if(isOk(mid,weights,days)){ // 判定条件
-        high = mid;
+    if(isBlue(mid)){
+        l = m;
     }else{
-        low = mid+1; //either low = mid+1 or high = mid-1
+        r = m; 
     }
 }
+return l or r
 ```
 
-二分模版，三个注意点：
+例子：[1,2,3,5,5,5,8,9]
 
-* while()条件，low < high, 不能 (low <= high)
-* 判定mid是否符合
-* low = mid+1 or high = mid
+Attempt | 
+first >=5 element |
+last <5 element | 
+first >5 element | 
+last <=5 element |
+
+| Attempt | isBlue condition | return |blue red |
+| :---: | :---: | :---: | :---: |
+| first >=5 element | <5 | r | [[1,2,3],[5,5,5,8,9]]
+| last <5 element | <5 | l |[[1,2,3],[5,5,5,8,9]]
+| first >5 element | <=5 | r | [[1,2,3,5,5,5],[8,9]]
+| last <=5 element | <=5 | l | [[1,2,3,5,5,5],[8,9]]
+
+It's easy to see from abour that we can get all four different result by changing isBlue()condition and return l or r.
+
+参考链接：https://www.youtube.com/watch?v=JuDAqNyTG4g
