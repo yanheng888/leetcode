@@ -7,5 +7,8 @@ Solution: quick select
 - quickSelect()各个区间的长度不要计算错误
 
 
+Solution2: binary search by value
+notice:
+- count(m)<=k means there are less or equal number of number whose frequency is equal to m
 
 参考链接：https://www.youtube.com/watch?v=6hjV-IdrOd0
