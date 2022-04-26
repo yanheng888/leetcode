@@ -1,33 +1,27 @@
-import java.util.Arrays;
-
 class Solution {
-    int[] time;
-    int totalTrips;
     public long minimumTime(int[] time, int totalTrips) {
-        this.time = time;
-        this.totalTrips = totalTrips;
-        long r = Integer.MIN_VALUE;
-        for (int t:time){
-            r = Math.max(r,t);
+        int minT = Integer.MAX_VALUE;
+        for(int t:time){
+            minT = Math.min(t,minT);
         }
-        r = r * totalTrips;
-        long l = 1;
+        long l = minT;
+        long r = (totalTrips*1L)*minT;
         while (l < r){
-            long m = l + (r-l)/2;
-            if(check(m)){
-                r = m;
-            }else{
+            long m = l+(r-l)/2;
+            if(!check(m,totalTrips,time)){
                 l = m+1;
+            }else{
+                r = m;
             }
         }
-        return  l;
+        return r;
     }
 
-    private boolean check(long m) {
+    private boolean check(long m,long totalTrips,int[] time) {
         long cnt = 0;
-        for (int t: time){
+        for(int t:time){
             cnt += m/t;
         }
-        return cnt >= totalTrips;
+        return cnt>=totalTrips;
     }
 }
