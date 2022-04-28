@@ -1,6 +1,7 @@
 **Solution: heap**
 
-Similar to 378
+Similar to 373
+
 Notice:
 - comparator for priority queue should only include difference of numerator. If it includes division, the division result could be 0, ex 1/3=0
 
