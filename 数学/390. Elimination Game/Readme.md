@@ -4,3 +4,6 @@
 Notice:
 - step_k = 2*step_(k-1)
 - only focus on the value of a1
+
+
+reference:https://leetcode-cn.com/problems/elimination-game/solution/xiao-chu-you-xi-by-leetcode-solution-ydpb/
