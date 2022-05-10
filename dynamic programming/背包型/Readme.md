@@ -1,7 +1,6 @@
 https://maomaoalgo.gitbook.io/python/hui-su-yu-dong-tai-gui-hua/bei-bao-dp
 
-
-为什么0-1背包问题需要用倒序？
+##### 为什么0-1背包问题需要用倒序？
 
 首先需要知道正序和倒序的效果，当使用正序时有累积效果，使用倒序无累积。比如leetcode 416:
 
@@ -43,3 +42,23 @@ num = 5:
 dp = [T,T,f,f,f,T,T,f,f,f,T,T]
 
 ```
+
+##### two for loop order
+
+```
+for coin:
+	for amount
+```
+
+it can calculate all combination to form an amount **n** . It will avoid duplicate combination, ex (1,2) and (2,1) will only count 1 time.
+
+
+
+```
+for amount:
+	for coin
+```
+
+when calculate combination of an amount **n** . It will include duplicate combination, ex (1,2)(2,1) will count 2 times. 
+
+To understand, practice 518,322
