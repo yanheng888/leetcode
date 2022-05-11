@@ -1,5 +1,7 @@
 [Solution]: https://leetcode-cn.com/problems/last-stone-weight-ii/solution/zui-hou-yi-kuai-shi-tou-de-zhong-liang-i-95p9/	"Solution"
-[Solution2]: https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1049.Last-Stone-Weight-II
+[Solution2]: https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1049.Last-Stone-Weight-II	"Solution2"
+
+
 
 
 
@@ -9,4 +11,4 @@
 
 
 
-**Solution2	** 计算出所有可能结果，取最小值
+**Solution2** 计算出所有可能结果，取最小值
