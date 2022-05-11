@@ -10,9 +10,9 @@
 
 Reference:
 
-Solution ref
+[Solution ref][]
 
-Solution2 ref
+[Solution2 ref][]
 
 
 
