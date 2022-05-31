@@ -1,42 +1,47 @@
 class Solution {
+    int[][] memo;
+    int[][] dirs;
+    int[][] mat;
     int res = 0;
-    int m,n;
-    int[][] dirs = new int[4][2];
-    int[][] dp;
-    public int longestIncreasingPath(int[][] matrix) {
-        m = matrix.length;
-        n = matrix[0].length;
-        dp = new int[m][n];
-        dirs[0] = new int[]{1,0};
-        dirs[1] = new int[]{-1,0};
-        dirs[2] = new int[]{0,1};
-        dirs[3] = new int[]{0,-1};
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                res = Math.max(res,dfs(i,j,1,matrix));
+    public int longestIncreasingPath(int[][] mat) {
+        dirs = new int[4][2];
+        this.mat = mat;
+        dirs[0] = new int[]{-1,0};
+        dirs[1] = new int[]{1,0};
+        dirs[2] = new int[]{0,-1};
+        dirs[3] = new int[]{0,1};
+        int m = mat.length;
+        int n = mat[0].length;
+        memo = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                res = Math.max(res,dfs(i,j));
             }
         }
         return res;
     }
-    private boolean isOk(int r, int c){
-        return !(r<0 || r>=m || c<0 || c>=n);
-    }
-    private int dfs(int r, int c, int step,int[][] mat) {
-        if(dp[r][c] != 0){
-            return dp[r][c];
+    private boolean isOk(int i, int j){
+        if(i < 0 || j < 0 || i >= mat.length || j >= mat[0].length){
+            return false;
         }
-        ++dp[r][c];
-        for(int[] dir: dirs){
-            int x = r+dir[0], y = c+dir[1];
+        return true;
+    }
+    private int dfs(int i, int j) {
+        if(memo[i][j] != 0){
+            return memo[i][j];
+        }
+        memo[i][j] = 1;
+        for(int[] dir:dirs){
+            int x = i+dir[0], y = j+dir[1];
             if(!isOk(x,y)){
                 continue;
             }
-            int cur = mat[r][c];
             int next = mat[x][y];
+            int cur = mat[i][j];
             if(cur < next){
-                dp[r][c] = Math.max(dp[r][c],1+dfs(x,y,step+1,mat));
+                memo[i][j] = Math.max(memo[i][j],1+dfs(x,y));
             }
         }
-        return dp[r][c];
+        return memo[i][j];
     }
 }
