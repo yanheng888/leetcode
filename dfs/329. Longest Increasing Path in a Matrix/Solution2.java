@@ -12,10 +12,9 @@ class Solution {
         dirs[3] = new int[]{0,1};
         int m = mat.length;
         int n = mat[0].length;
-        memo = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                res = Math.max(res,dfs(i,j));
+                dfs(i,j,1);
             }
         }
         return res;
@@ -26,11 +25,11 @@ class Solution {
         }
         return true;
     }
-    private int dfs(int i, int j) {
-        if(memo[i][j] != 0){
-            return memo[i][j];
+    private void dfs(int i, int j, int step) {
+        if(!isOk(i,j)){
+            return;
         }
-        memo[i][j] = 1;
+        res = Math.max(res,step);
         for(int[] dir:dirs){
             int x = i+dir[0], y = j+dir[1];
             if(!isOk(x,y)){
@@ -39,9 +38,8 @@ class Solution {
             int next = mat[x][y];
             int cur = mat[i][j];
             if(cur < next){
-                memo[i][j] = Math.max(memo[i][j],1+dfs(x,y));
+                dfs(x,y,step+1);
             }
         }
-        return memo[i][j];
     }
 }
