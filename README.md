@@ -17,6 +17,54 @@
   * [503. Next Greater Element II](https://github.com/yanheng888/leetcode/tree/main/stack/503.%20Next%20Greater%20Element%20II)
   * [85. Maximal-Rectangle](https://github.com/yanheng888/leetcode/tree/main/stack/85.%20Maximal-Rectangle)
   * [726. Number of Atoms](https://github.com/yanheng888/leetcode/tree/main/stack/726.%20Number%20of%20Atoms)
-  * 
 
+
+
+DFS:
+
+- Array
+
+  [1723. Find Minimum Time to Finish All Jobs](https://github.com/yanheng888/leetcode/tree/main/dfs/1723. Find Minimum Time to Finish All Jobs)
+
+  [40. Combination Sum II](https://github.com/yanheng888/leetcode/tree/main/dfs/40. Combination Sum II)
+
+  [46. Permutations](https://github.com/yanheng888/leetcode/tree/main/dfs/46. Permutations)
+
+  [47. Permutations II](https://github.com/yanheng888/leetcode/tree/main/dfs/47. Permutations II)
+
+  [403. Frog Jump](https://github.com/yanheng888/leetcode/tree/main/dfs/403. Frog Jump)
+
+  [55. Jump Game](https://github.com/yanheng888/leetcode/tree/main/dfs/55. Jump Game)
+
+  [638. Shopping Offers](https://github.com/yanheng888/leetcode/tree/main/dfs/638. Shopping Offers)
+
+  [698. Partition to K Equal Sum Subsets](https://github.com/yanheng888/leetcode/tree/main/dfs/698. Partition to K Equal Sum Subsets)
+
+- String
+
+  [306. Additive Number](https://github.com/yanheng888/leetcode/tree/main/dfs/306. Additive Number)
+
+  [395. Longest Substring with At Least K Repeating Characters](https://github.com/yanheng888/leetcode/tree/main/dfs/395. Longest Substring with At Least K Repeating Characters)
+
+  [93. Restore IP Addresses](https://github.com/yanheng888/leetcode/tree/main/dfs/93. Restore IP Addresses)
+
+- Graph
+
+  [133. Clone Graph](https://github.com/yanheng888/leetcode/tree/main/dfs/133. Clone Graph)
+
+  [207. Course Schedule](https://github.com/yanheng888/leetcode/tree/main/dfs/207. Course Schedule)
+
+- Matrix
+
+  [200. Number of Islands](https://github.com/yanheng888/leetcode/tree/main/dfs/200. Number of Islands)
+
+  [329. Longest Increasing Path in a Matrix](https://github.com/yanheng888/leetcode/tree/main/dfs/329. Longest Increasing Path in a Matrix)
+
+  [62. Unique Paths](https://github.com/yanheng888/leetcode/tree/main/dfs/62. Unique Paths)
+
+  [64. Minimum Path Sum](https://github.com/yanheng888/leetcode/tree/main/dfs/64. Minimum Path Sum)
+
+  [695. Max Area of Island](https://github.com/yanheng888/leetcode/tree/main/dfs/695. Max Area of Island)
+
+  
 
