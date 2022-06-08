@@ -21,28 +21,25 @@ class Solution {
         return dfs(1,n);
     }
 
-    private List<TreeNode> dfs(int start, int end) {
-        ArrayList<TreeNode> arr = new ArrayList<>();
-        if(start > end){
-            arr.add(null);
-            return arr;
+    private List<TreeNode> dfs(int start,int end) {
+        List<TreeNode> res = new ArrayList<>();
+        if(start>end){
+            res.add(null);
+            return res;
         }
-        if(start == end){
-            arr.add(new TreeNode(start));
-            return arr;
+        if(start==end){
+            res.add(new TreeNode(start));
+            return res;
         }
-        for(int i = start; i <= end; i++){
-            List<TreeNode> leftTree = dfs(start, i - 1);
-            List<TreeNode> rightTree = dfs(i + 1, end);
-            for(TreeNode lNode: leftTree){
-                for(TreeNode rNode: rightTree){
-                    TreeNode root = new TreeNode(i);
-                    root.left = lNode;
-                    root.right = rNode;
-                    arr.add(root);
+        for(int i=start;i<=end;i++){
+            List<TreeNode> leftNodes = dfs(start,i-1);
+            List<TreeNode> rightNodes = dfs(i+1,end);
+            for(TreeNode lNode:leftNodes){
+                for(TreeNode rNode:rightNodes){
+                    res.add(new TreeNode(i,lNode,rNode));
                 }
             }
         }
-        return arr;
+        return res;
     }
 }
