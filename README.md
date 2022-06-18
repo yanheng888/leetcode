@@ -74,8 +74,28 @@
 
   [95. Unique Binary Search Tree](https://github.com/yanheng888/leetcode/tree/main/tree/95. Unique Binary Search Trees II)
 
+  [116. Populating Next Right Pointers in Each Node](https://github.com/yanheng888/leetcode/tree/main/tree/116. Populating Next Right Pointers in Each Node)
+
+  [199. Binary Tree Right Side View](https://github.com/yanheng888/leetcode/tree/main/tree/199. Binary Tree Right Side View)
+
+  [124. Binary Tree Maximum Path Sum](https://github.com/yanheng888/leetcode/tree/main/tree/124. Binary Tree Maximum Path Sum)
+
+  
+
 - InOrder:
 
   [98.Validate-Binary-Search-Tree](https://github.com/yanheng888/leetcode/tree/main/tree/98.Validate-Binary-Search-Tree)
+
+  [99. Recover Binary Search Tree](https://github.com/yanheng888/leetcode/tree/main/tree/99. Recover Binary Search Tree)
+
+  [101. Symmetric Tree](https://github.com/yanheng888/leetcode/tree/main/tree/101. Symmetric Tree)
+
+  [105. Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/yanheng888/leetcode/tree/main/tree/105. Construct Binary Tree from Preorder and Inorder Traversal)
+
+  [110. Balanced Binary Tree](https://github.com/yanheng888/leetcode/tree/main/tree/110. Balanced Binary Tree)
+
+  
+
+  
 
   
